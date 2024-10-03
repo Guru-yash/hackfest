@@ -1,0 +1,331 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+background-color: rgb(187, 187, 158);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+#header
+{
+    width: 100%;
+    height: 100vh;
+    /* background-image: url(mmmut.jpeg); */
+    /* <video src="vid.mp4"  id="myvideo"autoplay loop></video> */
+    background-size: cover;
+    background-position: center;
+    
+}
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+.container video
+{
+    width: 10%;
+    height: 50%;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.4);
+}
+/* nav
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    position: sticky;
+    top: 5px;
+    background-color: rgba(105,105,105,0.8);
+    
+    height: 50px;
+}
+nav ul li{
+display: inline-block;
+margin: 3px 70px;
+}
+nav ul li a{
+    color: whitesmoke;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 1000;
+text-decoration: none;
+position: relative;
+padding: 10px;
+display: inline-block;
+
+}
+nav ul li a:hover{
+color: #ff004f;
+}
+nav ul li a::after{
+content: '';
+width: 0;
+height: 3px;
+background: red;
+position: absolute;
+bottom: -6px;
+left: 0;
+transition: 0.5s;
+
+}
+nav ul li a:hover::after{
+    width: 100%;
+    
+} */
+/* Navbar container */
+.navbar {
+  overflow: hidden;
+  background-color: rgba(105,105,105,0.8);
+  font-family: Arial;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.header_text{
+  /* border: 2px solid red; */
+  color: black;
+  margin: 5px 200px;
+  font:size 30px;
+}
+.header_text h1{
+  font-size: 60ox;
+  margin-top: 20px;
+  margin: 5px 50px;
+}
+.header_text h1 span{
+  color: #ff004f;
+  position: relative;
+}
+.header_text h1 span::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  background: rgb(187, 187, 158);;
+  width: 100%;
+  height: 100%;
+  width: px;
+  border-left: 2px solid #ff004f;
+  animation: typing 3.5s steps(20) infinite;
+}
+@keyframes typing{
+  100%{
+      left: 100%;
+      /* margin: o -35px o 35px; */
+  }
+}
+  .work {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    max-width: 1100px;
+    margin: 50px auto;
+  }
+  .grid_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card1 {
+    max-width: 320px;
+    height: 420px;
+    margin: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s ease-in-out;
+    background-color: aquamarine;
+   
+  }
+  .card2 {
+    max-width: 320px;
+    height: 420px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s ease-in-out;
+    background-color: rgb(170, 170, 221);
+   
+  }
+  .card3 {
+    max-width: 320px;
+    height: 420px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s ease-in-out;
+    background-color: lightblue;
+   
+  }
+  .card4 {
+    max-width: 320px;
+    height: 420px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s ease-in-out;
+    background-color: lightgreen;
+   
+  }
+  .card4 {
+    max-width: 320px;
+    height: 420px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s ease-in-out;
+    background-color: lightgreen;
+   
+  }
+  .card5 {
+    max-width: 320px;
+    height: 420px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s ease-in-out;
+    background-color: beige;
+   
+  }
+  .card6 {
+    max-width: 320px;
+    height: 420px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2);
+    transition: 0.2s ease-in-out;
+    background-color: pink;
+   
+  }
+  .image_container img{
+    width: 320px;
+   height: 260px;
+   border-radius: 30px 20px;
+  }
+  .card1:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease-in-out;
+  }
+  .card1:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease-in-out;
+  }
+  .card2:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease-in-out;
+  }
+  .card3:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease-in-out;
+  }
+  .card4:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease-in-out;
+  }
+  .card5:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease-in-out;
+  }
+  .card6:hover {
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+    transition: 0.2s ease-in-out;
+  }
+  .card_content {
+    padding: 20px;
+    color: black;
+  }
+  .card_content h3 {
+    margin-bottom: 10px;
+    color: red;
+  }
+  .foot{
+    background-color: black;
+  }
+  .last{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.last span{
+    color: #ff004f;
+}
+

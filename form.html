@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *
+{
+   box-sizing: border-box;
+   margin:0;
+   padding:0;
+}
+
+.container
+{
+    background-color: grey;
+    border: solid black;
+    min-height: 100vh;
+}
+
+.content
+{
+    background-color: aliceblue;
+    width: 800px;
+    margin: 100px auto;
+    padding:20px;
+    border-radius: 15px;
+}
+
+h1
+{
+    text-align: center;
+}
+
+.section
+{
+    margin:10px;
+}
+
+.main
+{
+    margin-top:30px;
+
+}
+
+.main
+{
+    display :grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px;
+}
+
+input ,
+select ,
+textarea
+{
+    padding: 9px 10px;
+    border: 1px solid rgb(52, 123, 230);
+    border-radius: 6px;
+}
+
+input:hover
+{
+    color: rgb(11, 248, 170);
+    border-color: crimson;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+select:hover
+{
+    color: rgb(11, 249, 170);
+    border-color: crimson;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+textarea
+{
+    color: rgb(11, 249, 170);
+    border-color: crimson; 
+}
+
+.button
+{
+    color: white;
+    text-align: right;
+}
+
+#submit
+{
+    color: white;
+    background-color: rgb(255, 7, 11);
+}
+
+#submit:hover
+{ 
+   color: rgb(255, 7, 11);
+   background-color: white;
+   border-color:darkorange;
+   font-family:Georgia, 'Times New Roman', Times, serif;
+}
+    </style>
+    <title></title>
+</head>
+<body>
+    <div class="container">
+
+        <div class="content">
+            
+            <div class="section">
+                
+                <h1>PLEASE FILL THE FORM</h1>
+                <form action="">
+
+                    <div class="main">
+
+                        <div class="main">
+                             <label for="First name">FIRST NAME</label>
+                             <input type="text" id="first" placeholder="ENTER FIRST NAME">
+                        </div>
+
+                        <div class="main">
+                            <label for="Last name">LAST NAME</label>
+                            <input type="text" id="last" placeholder="ENTER LAST NAME">
+                        </div>
+
+                        <div class="main">
+                            <label for="email">EMAIL</label>
+                            <input type="email" id="email" placeholder="xyz@yahoo.com">
+                        </div>
+
+                        <div class="main">
+                            <label for="role">BRANCH</label>
+                            <select id="role" name="job_role">
+                                <option value="">SELECT OPTION</option>
+                                <option value="frontend">CSE</option>
+                                <option value="backend">IT</option>
+                                <option value="android">ECE</option>
+                                <option value="analyst">EE</option>
+                                <option value="analyst">ME</option>
+                                <option value="analyst">CE</option>
+                                <option value="analyst">CHE</option>
+                            </select>
+                        </div>
+
+                         <div class="main">
+                             <label for="address">ADDRESS</label>
+                            <textarea id="address" name="address" row="5" cols="100"></textarea>
+                        </div>
+
+                        <div class="main">
+                            <label for="city">CITY</label>
+                            <input type="text" id="city" placeholder="CITY NAME">
+                        </div>
+
+                        <div class="main">
+                          <label for="pincode">CONTACT NUMBER</label>
+                          <input type="number" id="pin" placeholder="ENTER YOUR MOBILE NUMBER">
+                        </div>
+
+                        <div class="main">
+                             <label for="date">DATE OF BIRTH</label>
+                            <input type="date" id="date" placeholder="SELECT DATE">
+                        </div>
+
+                        <div class="main">
+                            <label for="upload">UPLOAD DOCUMENT</label>
+                            <input type="file" id="file" placeholder="BROWSE FILE">
+                         </div>
+                    </div>
+
+                    <br><br>
+
+                    <div class="button">
+                        <button type="submit" id="submit"><h2>SUBMIT</h2></button>
+                     </div>
+                     
+                </form>
+
+            </div>
+
+        </div>
+        
+    </div>
+    
+</body>
+</html>
